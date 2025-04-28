@@ -26,6 +26,6 @@ Project Architecture
 Step 1: Data Extraction
 
 * Created an automated, and continuous data integration from 2 cloud storage sources
-      * AWS S3 -> Snowflake (AWS_SOURCE_DATA_SCHEMA)
-      * ADLS GEN2 -> Snowflake (AZURE_SOURCE_DATA_SCHEMA)
+  * AWS S3 -> Snowflake (AWS_SOURCE_DATA_SCHEMA)
+  * ADLS GEN2 -> Snowflake (AZURE_SOURCE_DATA_SCHEMA)
 * Used Snowflake external stages, and Snowpipe to ingest raw data
