@@ -4,6 +4,7 @@
 Creating and implementing a modern ELT pipeline for the bank. This includes extracting, loading, and transforming data from AWS S3 and Azure Data Lake Storage Gen2 into a centralized Snowflake data warehouse, performing transformations with DBT, and ensuring its maintenance across various cross-functional departments.
 
 
+
 Project Architecture
 
 ![image](https://github.com/user-attachments/assets/36095a92-64c2-4b14-98c9-314bb8400345)
@@ -19,3 +20,9 @@ Project Architecture
 
 ![image](https://github.com/user-attachments/assets/23c54676-dbf4-4370-8334-7b69e1b84526)
 
+
+**Steps Followed**
+
+Step 1: Data Extraction
+
+* Establish
