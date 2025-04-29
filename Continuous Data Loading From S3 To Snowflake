@@ -3,4 +3,17 @@
 
 2. Created storage integration on Snowflake to establish connection between S3, and DW. Required credentials were s3 bucket location, and the policy for the required bucket access
 
+3.  After creation checked the whether the integration has been established or not 
+
+4. After establishment of the connection created csv file format for the staging purpose
+
+5. Created the staging layer as to land the raw data at the particular location
+
+6.  Checked whether staging established or not
+
+7. After proper creation of staging layer, created the required no of snowpipe to load the data to the required tables
+
+8. Once created ran the below command to check whether file has reached the required snowpipe or not
+
+9. At last checked the no of records in the table
 
