@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3fba0c4d-003d-4a18-9a6a-bbf3927c7c58)# BANKING-END-TO-END-DATA-ENGINEERING-PROJECT
+# BANKING-END-TO-END-DATA-ENGINEERING-PROJECT
 
 **Introduction**:
 Creating and implementing a modern ELT pipeline for the bank. This includes extracting, loading, and transforming data from AWS S3 and Azure Data Lake Storage Gen2 into a centralized Snowflake data warehouse, performing transformations with DBT, and ensuring its maintenance across various cross-functional departments.
