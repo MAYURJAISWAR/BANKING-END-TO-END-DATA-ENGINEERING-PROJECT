@@ -1,1 +1,6 @@
+1. Created the required tables structure on Snowflake for which data needs to be fetched from the bucket folder
+
+
+2. Created storage integration on Snowflake to establish connection between S3, and DW. Required credentials were s3 bucket location, and the policy for the required bucket access
+
 
