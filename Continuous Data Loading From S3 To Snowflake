@@ -1,19 +1,89 @@
-1. Created the required tables structure on Snowflake for which data needs to be fetched from the bucket folder
+1. . Created the required table structures in Snowflake AWS_SOURCE_DATA_SCHEMA to hold data fetched from the S3 bucket
+
+CREATE TABLE district_tbl(
+a1 INT PRIMARY KEY,
+a2 VARCHAR(100),
+a3 VARCHAR(100),
+a4 INT,
+a5 INT,
+a6 INT,
+a7 INT,
+a8 INT,	
+a9 INT,
+a10	FLOAT,
+a11 INT,
+a12 FLOAT,
+a13 FLOAT,
+a14 INT,
+a15	INT,
+a16 INT
+);
 
 
-2. Created storage integration on Snowflake to establish connection between S3, and DW. Required credentials were s3 bucket location, and the policy for the required bucket access
+CREATE TABLE account_tbl(
+account_id INT PRIMARY KEY,
+district_id	INT,
+frequency	VARCHAR(40),
+date INT,
+account_type VARCHAR(100) 
+); 
 
-3.  After creation checked the whether the integration has been established or not 
 
-4. After establishment of the connection created csv file format for the staging purpose
+CREATE TABLE order_tbl (
+order_id	INT PRIMARY KEY,
+account_id	INT,
+bank_to	VARCHAR(45),
+account_to	INT,
+amount FLOAT
+);
 
-5. Created the staging layer as to land the raw data at the particular location
+CREATE TABLE loan_tbl(
+loan_id	INT ,
+account_id	INT,
+date INT,
+amount	INT,
+duration	INT,
+payment	INT,
+status VARCHAR(35)
+);
 
-6.  Checked whether staging established or not
 
-7. After proper creation of staging layer, created the required no of snowpipe to load the data to the required tables
+CREATE TABLE transaction_tbl(
+trans_id INT,	
+account_id	INT,
+date	DATE,
+type	VARCHAR(30),
+operation	VARCHAR(40),
+amount	INT,
+balance	FLOAT,
+purpose	VARCHAR(40),
+bank	VARCHAR(45),
+account_partner_id INT
+);
 
-8. Once created ran the below command to check whether file has reached the required snowpipe or not
 
-9. At last checked the no of records in the table
+2. Created a storage integration in Snowflake to connect to the AWS S3 bucket
+
+CREATE STORAGE INTEGRATION aws_s3_integration 
+TYPE=external_stage
+STORAGE_PROVIDER=s3
+enabled=TRUE
+STORAGE_AWS_ROLE_ARN='arn:aws:iam::183295428453:role/bank_data_access_role'
+STORAGE_ALLOWED_LOCATIONS=('S3://czechoslovakia-banking-data/');
+
+3.  Verified whether the storage integration was successfully created
+
+DESC INTEGRATION aws_s3_integration;
+
+4. Created a CSV file format for staging, as the source files were in CSV format
+
+5. Created an external stage to land raw data in a staging location in Snowflake
+
+6.  Verified whether the stage was created properly
+
+7. Created Snowpipes for auto-ingesting data from S3 to the corresponding Snowflake tables
+
+8. Triggered manual refresh of a pipe to check whether data had reached Snowflake
+
+9. Verified the number of records loaded into the table
 
