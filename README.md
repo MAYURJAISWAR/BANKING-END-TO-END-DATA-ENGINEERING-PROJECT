@@ -30,16 +30,20 @@ Project Architecture
   * ADLS GEN2 -> Snowflake (AZURE_SOURCE_DATA_SCHEMA)
 
 
+
 **Step 2: Raw Data Layering**
 
 * Maintained source-specific schema (AWS_SOURCE_DATA_SCHEMA, and AZURE_SOURCE_DATA_SCHEMA) to separate raw data based on sources to ensure better maintainability
 
-**Step 3: Loading into staging **
+
+
+**Step 3: Loading Into Staging**
 
 * Copied the raw data tables into a different staging schema loading_staging_schema_1 within Snowflake using dbt Core so as to preserve the irst loaded copy
 
-**Step 4: Data Transformation **
+
+
+**Step 4: Data Transformation**
+
 * Performed data transformation (converting int to proper date format,changing the column names,establishing constraints like PK, and FK, etc) in DBT core models
 * Loaded the clean datasets into separated into TRANSFORMED_DATA_SCHEMA
-
-
