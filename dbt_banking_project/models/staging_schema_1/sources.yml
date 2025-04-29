@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: aws_source_data_schema
+    database: banking_data
+    schema: aws_source_data_schema
+    tables:
+      - name: district_tbl
+      - name: account_tbl
+      - name: order_tbl
+      - name: loan_tbl
+      - name: transaction_tbl
+  
+  - name: azure_source_data_schema
+    database: banking_data
+    schema: azure_source_data_schema
+    tables:
+      - name: client_tbl
+      - name: disposition_tbl
+      - name: card_tbl
