@@ -1,4 +1,4 @@
-# BANKING-END-TO-END-DATA-ENGINEERING-PROJECT
+![image](https://github.com/user-attachments/assets/3fba0c4d-003d-4a18-9a6a-bbf3927c7c58)# BANKING-END-TO-END-DATA-ENGINEERING-PROJECT
 
 **Introduction**:
 Creating and implementing a modern ELT pipeline for the bank. This includes extracting, loading, and transforming data from AWS S3 and Azure Data Lake Storage Gen2 into a centralized Snowflake data warehouse, performing transformations with DBT, and ensuring its maintenance across various cross-functional departments.
@@ -23,7 +23,7 @@ Project Architecture
 
 **Steps Followed**
 
-Step 1: Data Extraction
+**Step 1: Data Extraction**
 
 * Created an automated, and continuous data integration from 2 cloud storage sources
   * AWS S3 -> Snowflake (AWS_SOURCE_DATA_SCHEMA)
@@ -213,14 +213,15 @@ FROM BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.TRANSACTION_TBL;
 
 
 
-Step 2: Raw Data Layering
+**Step 2: Raw Data Layering**
 
 * Maintained source-specific schema (AWS_SOURCE_DATA_SCHEMA, and AZURE_SOURCE_DATA_SCHEMA) to separate raw data based on sources to ensure better maintainability
 
-Step 3: Loading into staging 
+**Step 3: Loading into staging **
+
 * Copied the raw data tables into a different staging schema loading_staging_schema_1 within Snowflake using dbt Core so as to preserve the irst loaded copy
 
-Step 4: Data Transformation 
+**Step 4: Data Transformation **
 * Performed data transformation (converting int to proper date format,changing the column names,establishing constraints like PK, and FK, etc) in DBT core models
 * Loaded the clean datasets into separated into TRANSFORMED_DATA_SCHEMA
 
