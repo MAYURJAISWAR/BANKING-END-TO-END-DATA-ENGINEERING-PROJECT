@@ -40,3 +40,5 @@ Step 3: Loading into staging
 Step 4: Data Transformation 
 * Performed data transformation (converting int to proper date format,changing the column names,establishing constraints like PK, and FK, etc) in DBT core models
 * Loaded the clean datasets into separated into TRANSFORMED_DATA_SCHEMA
+
+
