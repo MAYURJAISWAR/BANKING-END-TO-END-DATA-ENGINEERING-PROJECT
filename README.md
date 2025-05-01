@@ -26,7 +26,7 @@ Project Architecture
 **Step 1: Data Extraction**
 
 * Created an automated, and continuous data integration from 2 cloud storage sources
-  * AWS S3 -> Snowflake (AWS_SOURCE_DATA_SCHEMA)   [Step Link](github.com/MAYURJAISWAR/BANKING-END-TO-END-DATA-ENGINEERING-PROJECT/blob/main/s3_data_extraction_and_load_to_snowflake.md)
+  * AWS S3 -> Snowflake (AWS_SOURCE_DATA_SCHEMA)   [Step Link](https://github.com/MAYURJAISWAR/BANKING-END-TO-END-DATA-ENGINEERING-PROJECT/blob/main/s3_data_extraction_and_load_to_snowflake.md)
 
   * ADLS GEN2 -> Snowflake (AZURE_SOURCE_DATA_SCHEMA)
 
