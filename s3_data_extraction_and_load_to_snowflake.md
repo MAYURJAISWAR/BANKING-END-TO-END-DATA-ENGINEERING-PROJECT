@@ -1,4 +1,4 @@
-1. Created the required table structures in Snowflake to hold data fetched from the S3 bucket
+* Created the required table structures in Snowflake to hold data fetched from the S3 bucket
 
 2. Created a storage integration in Snowflake to connect to the AWS S3 bucket
 
