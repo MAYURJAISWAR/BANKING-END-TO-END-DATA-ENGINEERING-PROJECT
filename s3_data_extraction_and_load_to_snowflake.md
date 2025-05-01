@@ -89,14 +89,29 @@ ALTER PIPE BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.TRANSACTION_TBL_SNOWPIPE REFRESH;
 SELECT COUNT(*) AS district_tbl_records
 FROM BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.DISTRICT_TBL;
 
+![image](https://github.com/user-attachments/assets/bab10046-2b1a-47b1-9387-f23d903a71e7)
+
+
 SELECT COUNT(*) AS account_tbl_records
 FROM BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.ACCOUNT_TBL;
+
+![image](https://github.com/user-attachments/assets/12db3713-6c7a-4d31-93af-0351ee641d7c)
+
 
 SELECT COUNT(*) AS order_tbl_records
 FROM BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.ORDER_TBL;
 
+![image](https://github.com/user-attachments/assets/bb1417e1-595e-419c-a155-d9dbfa72f88d)
+
+
 SELECT COUNT(*) AS loan_tbl_records
 FROM BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.LOAN_TBL;
 
+![image](https://github.com/user-attachments/assets/003ad0ab-4158-4b80-8b90-ae1135897622)
+
+
 SELECT COUNT(*) AS transaction_tbl_records
 FROM BANKING_DATA.AWS_SOURCE_DATA_SCHEMA.TRANSACTION_TBL;
+
+![image](https://github.com/user-attachments/assets/4618a339-78b2-41ba-b906-08f6021cf0cc)
+
