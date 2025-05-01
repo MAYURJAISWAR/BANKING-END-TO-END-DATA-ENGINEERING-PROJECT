@@ -40,11 +40,12 @@ Project Architecture
 
 **Step 3: Loading Into Staging**
 
-* Copied the raw data tables into a different staging schema loading_staging_schema_1 within Snowflake using dbt Core so as to preserve the first loaded copy
+* Copied the raw data tables into a different staging schema loading_staging_schema_1 within Snowflake using dbt Core so as to preserve the first loaded copy [Step Link](https://github.com/MAYURJAISWAR/BANKING-END-TO-END-DATA-ENGINEERING-PROJECT/tree/main/dbt_banking_project/models/staging_schema_1)
 
 
 
 **Step 4: Data Transformation**
 
 * Performed data transformation (converting int to proper date format,changing the column names,establishing constraints like PK, and FK, etc) in DBT core models
-* Loaded the clean datasets into separated into TRANSFORMED_DATA_SCHEMA
+* Loaded the clean datasets into separated into TRANSFORMED_DATA_SCHEMA [Step Link](https://github.com/MAYURJAISWAR/BANKING-END-TO-END-DATA-ENGINEERING-PROJECT/tree/main/dbt_banking_project/models/transformation_data_models)
+
