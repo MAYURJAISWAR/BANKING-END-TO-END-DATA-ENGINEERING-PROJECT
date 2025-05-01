@@ -40,7 +40,7 @@ Project Architecture
 
 **Step 3: Loading Into Staging**
 
-* Copied the raw data tables into a different staging schema loading_staging_schema_1 within Snowflake using dbt Core so as to preserve the irst loaded copy
+* Copied the raw data tables into a different staging schema loading_staging_schema_1 within Snowflake using dbt Core so as to preserve the first loaded copy
 
 
 
