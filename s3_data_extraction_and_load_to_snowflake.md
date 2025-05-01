@@ -13,6 +13,9 @@ STORAGE_ALLOWED_LOCATIONS = ('s3://czechoslovakia-banking-data/');
 
 DESC INTEGRATION aws_s3_integration;
 
+![image](https://github.com/user-attachments/assets/0c627781-e3eb-49be-bcc7-0ad98b1d3685)
+
+
 * Created a CSV file format for staging, as the source files were in CSV format
 
 CREATE FILE FORMAT aws_s3_file_format
@@ -32,6 +35,9 @@ STORAGE_INTEGRATION = aws_s3_integration;
 * Verified whether the stage was created properly
 
 SHOW STAGES;
+
+![image](https://github.com/user-attachments/assets/b2c0b091-d2d5-4316-a6ea-ac8cad12680a)
+
 
 * Created Snowpipes for auto-ingesting data from S3 to the corresponding Snowflake tables
 
